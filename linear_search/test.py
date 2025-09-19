@@ -1,5 +1,5 @@
 from random import randint
-from algorithm import binary_search
+from algorithm import linear_search
 
 
 FLAGS = (1000, 5000, 10000, 50000, 100000, 500000, 1000000)
@@ -13,7 +13,7 @@ def test_binary_search():
         
         for i in range(NUMBER_OF_TESTS):
             item = randint(1, flag)
-            result = binary_search(array, item)
+            result = linear_search(array, item)
             total_results += result.operations
 
         med = total_results // NUMBER_OF_TESTS
